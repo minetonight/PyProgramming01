@@ -10,6 +10,6 @@ while True:
   if my_number == 1
     min = com_number + 1
   elif my_number == 2
-    max = max - (com_number + 1) 
+    max = max - 1
   else:
     break
