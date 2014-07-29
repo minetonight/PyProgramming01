@@ -1,18 +1,21 @@
 import random
 
-min = 1
-max = 1000
+max = input("What maximum number want: ")
+min = input("What minimum number want: ")
 
-while True :
-
-   com_chislo = random.randint(min, max)
-   print ("nagore ili nadolo e moeto chislo" + str(com_chislo))
-   moeto_chislo = input("1 e nagore, 2 e nadolo,3 e vyarno ")
-    
-   if moeto_chislo == 1:
-		min = com_chislo + 1
-   elif moeto_chislo == 2:
-		max = com_chislo -1
-   elif moeto_chislo == 3:
-      print ("pecelish")
-      break
+while True:
+  	com_number = random.randint(min,max)
+  	print("Up or down  from " + str(com_number))
+  	my_number = input("1 for up, 2 for down, 3 for Yes: ")
+  	
+  	if max == min:
+  		print("You are cheating")
+  	if min == max:
+  		print("You are cheating")
+  
+  if my_number == 1:
+    min = com_number + 1
+  elif my_number == 2:
+    max = com_number - 1
+  else:
+    break
