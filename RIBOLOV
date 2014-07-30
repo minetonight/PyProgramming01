@@ -21,6 +21,7 @@ while True:
 		user_throw = input("Now throw with 2 and let's see what we can catch! ")
 		if user_throw == 2:
 			print("And now we wait...")
+			time.sleep(3.00)
 		while True:
 			struggle = 0
 			time = time + 1
@@ -28,6 +29,7 @@ while True:
 		
 			if time == timer:
 				struggle = input("Oh, something's on!Pull!!! ")
+				time.sleep(3.00)
 				if struggle == strenght:
 					print("You caught something!")
 					fish = fish + 1
